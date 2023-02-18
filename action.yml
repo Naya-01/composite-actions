@@ -12,7 +12,7 @@ runs:
           node-version: '16'
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@naya-01'
-      - run: npm ci
+      - run: npm install
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ inputs.github_token }}
