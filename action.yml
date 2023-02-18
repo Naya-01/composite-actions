@@ -13,6 +13,8 @@ runs:
           registry-url: 'https://npm.pkg.github.com/'
           scope: '@naya-01'
       - run: npm install
+        shell: bash
       - run: npm publish
+        shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ inputs.github_token }}
